@@ -43,23 +43,27 @@ def solve_ucs(initial_state, goal_state):
     frontier = []
     heapq.heappush(frontier, start_node)
     explored_set = set()
+    frontier_states = set()
+    frontier_states.add(start_node.state)
 
     while frontier:
-        current_node = heapq.heappop(frontier)  
+        current_node = heapq.heappop(frontier)
+        frontier_states.discard(current_node.state)
 
         if current_node.state == goal_state:
-            return current_node  ## goal found
+            return current_node
 
         explored_set.add(current_node.state)
 
         for move_func in (move_up, move_down, move_left, move_right):
             child_state = move_func(current_node.state)
-            if child_state is not None and child_state not in explored_set:
+            if child_state is not None and child_state not in explored_set and child_state not in frontier_states:
                 child_node = Node(child_state, current_node, current_node.g_cost + 1)
                 heapq.heappush(frontier, child_node)
+                frontier_states.add(child_node.state)
 
 if __name__ == "__main__":
-    initial_state = (1, 2, 3, 4, 5, 6, 7, 0, 8)
+    initial_state = (1, 2, 3, 4, 5, 6, 0, 7, 8)
     goal_state = (1, 2, 3, 4, 5, 6, 7, 8, 0)
 
     print("Initial state:", initial_state)
