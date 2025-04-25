@@ -45,13 +45,16 @@ def solve_ucs(initial_state, goal_state):
     explored_set = set()
     frontier_states = set()
     frontier_states.add(start_node.state)
+    nodes_expanded = 0
+    max_queue_size = 0
 
     while frontier:
         current_node = heapq.heappop(frontier)
+        nodes_expanded += 1
         frontier_states.discard(current_node.state)
 
         if current_node.state == goal_state:
-            return current_node
+            return current_node, nodes_expanded, max_queue_size
 
         explored_set.add(current_node.state)
 
@@ -61,15 +64,31 @@ def solve_ucs(initial_state, goal_state):
                 child_node = Node(child_state, current_node, current_node.g_cost + 1)
                 heapq.heappush(frontier, child_node)
                 frontier_states.add(child_node.state)
+                
+    max_queue_size = max(max_queue_size, len(frontier))
+    
+
+def backtrack_path(goal_node): ## backtrack from goal node to find path
+    steps = 0
+    current = goal_node
+    while current.parent is not None:
+        steps += 1
+        current = current.parent
+    return steps
 
 if __name__ == "__main__":
     initial_state = (1, 2, 3, 4, 5, 6, 0, 7, 8)
     goal_state = (1, 2, 3, 4, 5, 6, 7, 8, 0)
 
     print("Initial state:", initial_state)
-    result = solve_ucs(initial_state, goal_state)
 
-    if result:
+    result_node, nodes_expanded, max_queue_size = solve_ucs(initial_state, goal_state)
+
+    if result_node:
+        steps = backtrack_path(result_node)
         print("successful")
+        print("nodes expanded: ",nodes_expanded)
+        print("max queue: ", max_queue_size)
+        print("steps until solved: " ,steps)
     else:
         print("unsuccessful")
