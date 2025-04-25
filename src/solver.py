@@ -25,19 +25,28 @@ def move_left(state):
         return tuple(state_list)
     return None
 
-def move_right(state): 
+def move_right(state):
     index = find_blank(state)
-    if index % 3 != 0:  # not in right column
+    if index % 3 != 2:  # not in right column
         state_list = list(state)
-        state_list[index], state_list[index - 1] = state_list[index - 1], state_list[index]  
+        state_list[index], state_list[index + 1] = state_list[index + 1], state_list[index]
         return tuple(state_list)
     return None
 
-initial_state = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 
 if __name__ == "__main__":
-    print("Initial state:", initial_state)
-    print("Up:   ", move_up(initial_state))
-    print("Down: ", move_down(initial_state))
-    print("Left: ", move_left(initial_state))
-    print("Right:", move_right(initial_state))
+    test_states = [
+        (0, 1, 2, 3, 4, 5, 6, 7, 8),  
+        (1, 0, 3, 3, 4, 5, 6, 7, 8), 
+        (1, 2, 0, 3, 4, 5, 6, 7, 8),  
+        (1, 2, 3, 0, 4, 5, 6, 7, 8), 
+        (1, 2, 3, 4, 0, 5, 6, 7, 8),  
+        (1, 2, 3, 4, 5, 6, 7, 8, 0)   
+    ]
+
+    for state in test_states:
+        print ("Test: ", state)
+        print("Up: ", move_up(state))
+        print("Down: ", move_down(state))
+        print("Left: ", move_left(state))
+        print("Right:", move_right(state))
