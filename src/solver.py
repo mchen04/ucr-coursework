@@ -1,3 +1,8 @@
+import heapq
+from node import Node
+
+
+
 def find_blank(state):
     return state.index(0)
 
@@ -33,20 +38,34 @@ def move_right(state):
         return tuple(state_list)
     return None
 
+def solve_ucs(initial_state, goal_state):
+    start_node = Node(initial_state, None, 0)
+    frontier = []
+    heapq.heappush(frontier, start_node)
+    explored_set = set()
+
+    while frontier:
+        current_node = heapq.heappop(frontier)  
+
+        if current_node.state == goal_state:
+            return current_node  ## goal found
+
+        explored_set.add(current_node.state)
+
+        for move_func in (move_up, move_down, move_left, move_right):
+            child_state = move_func(current_node.state)
+            if child_state is not None and child_state not in explored_set:
+                child_node = Node(child_state, current_node, current_node.g_cost + 1)
+                heapq.heappush(frontier, child_node)
 
 if __name__ == "__main__":
-    test_states = [
-        (0, 1, 2, 3, 4, 5, 6, 7, 8),  
-        (1, 0, 3, 3, 4, 5, 6, 7, 8), 
-        (1, 2, 0, 3, 4, 5, 6, 7, 8),  
-        (1, 2, 3, 0, 4, 5, 6, 7, 8), 
-        (1, 2, 3, 4, 0, 5, 6, 7, 8),  
-        (1, 2, 3, 4, 5, 6, 7, 8, 0)   
-    ]
+    initial_state = (1, 2, 3, 4, 5, 6, 7, 0, 8)
+    goal_state = (1, 2, 3, 4, 5, 6, 7, 8, 0)
 
-    for state in test_states:
-        print ("Test: ", state)
-        print("Up: ", move_up(state))
-        print("Down: ", move_down(state))
-        print("Left: ", move_left(state))
-        print("Right:", move_right(state))
+    print("Initial state:", initial_state)
+    result = solve_ucs(initial_state, goal_state)
+
+    if result:
+        print("successful")
+    else:
+        print("unsuccessful")
