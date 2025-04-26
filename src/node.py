@@ -7,4 +7,6 @@ class Node:
         self.f_cost = f_cost
 
     def __lt__(self, other):
-        return self.g_cost < other.g_cost  ## compare nodes by cost 
+        if self.f_cost == other.f_cost:
+            return self.h_cost < other.h_cost
+        return self.f_cost < other.f_cost

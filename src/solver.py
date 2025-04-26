@@ -71,10 +71,9 @@ def solve_ucs(initial_state, goal_state):
 def heuristic_misplaced(state, goal_state):
     count = 0
     for index, tile in enumerate(state):
-        if tile != goal_state[index]: 
+        if tile != 0 and tile != goal_state[index]:
             count += 1
     return count
-
 def solve_a_star(initial_state, goal_state, heuristic_func):
     start_node = Node(initial_state, None, 0, heuristic_func(initial_state, goal_state))
     frontier = []
