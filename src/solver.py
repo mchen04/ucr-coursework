@@ -74,6 +74,17 @@ def heuristic_misplaced(state, goal_state):
         if tile != 0 and tile != goal_state[index]:
             count += 1
     return count
+def heuristic_euclidean(state, goal_state):
+    sum = 0
+    for index, tile in enumerate(state):
+        if tile != 0:
+            goal_index = goal_state.index(tile)
+            x1, y1 = index % 3, index // 3
+            x2, y2 = goal_index % 3, goal_index // 3
+            distance = ((x1 - x2)**2 + (y1 - y2)**2)**0.5
+            sum += distance
+    return sum
+
 def solve_a_star(initial_state, goal_state, heuristic_func):
     start_node = Node(initial_state, None, 0, heuristic_func(initial_state, goal_state))
     frontier = []
@@ -160,7 +171,8 @@ if __name__ == "__main__":
     print("\nChoose an algorithm:")
     print("1. Uniform Cost Search")
     print("2. A* w/ Misplaced Tile")
-    algorithm_choice = input("Choose (1 or 2): ")
+    print("3. A* w/ Euclidean Distance")
+    algorithm_choice = input("Choose (1, 2, or 3): ")
 
     if algorithm_choice == "1":
         print("\nRunning Uniform Cost Search")
@@ -168,6 +180,9 @@ if __name__ == "__main__":
     elif algorithm_choice == "2":
         print("\nRunning A* with Misplaced Tile heuristic")
         result_node, nodes_expanded, max_queue_size = solve_a_star(initial_state, goal_state, heuristic_misplaced)
+    elif algorithm_choice == "3":
+        print("\nRunning A* with Euclidean Distance heuristic")
+        result_node, nodes_expanded, max_queue_size = solve_a_star(initial_state, goal_state, heuristic_euclidean)
     else:
         print("\nInvalid choice. Running Default")
         result_node, nodes_expanded, max_queue_size = solve_ucs(initial_state, goal_state)
