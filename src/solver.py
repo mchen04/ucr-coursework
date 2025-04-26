@@ -68,6 +68,46 @@ def solve_ucs(initial_state, goal_state):
 
     return None, nodes_expanded, max_queue_size
 
+def heuristic_misplaced(state, goal_state):
+    count = 0
+    for index, tile in enumerate(state):
+        if tile != goal_state[index]: 
+            count += 1
+    return count
+
+def solve_a_star(initial_state, goal_state, heuristic_func):
+    start_node = Node(initial_state, None, 0, heuristic_func(initial_state, goal_state))
+    frontier = []
+    heapq.heappush(frontier, (start_node.f_cost, start_node))
+    explored_set = set()
+    frontier_states = set()
+    frontier_states.add(start_node.state)
+    nodes_expanded = 0
+    max_queue_size = 0
+
+    while frontier:
+        max_queue_size = max(max_queue_size, len(frontier))
+
+        f_cost, current_node = heapq.heappop(frontier)
+        print(f"Expanding node with g={current_node.g_cost}, h={current_node.h_cost}, f={current_node.f_cost}, state={current_node.state}")
+        nodes_expanded += 1
+        frontier_states.discard(current_node.state)
+
+        if current_node.state == goal_state:
+            return current_node, nodes_expanded, max_queue_size
+
+        explored_set.add(current_node.state)
+
+        for move_func in (move_up, move_down, move_left, move_right):
+            child_state = move_func(current_node.state)
+            if child_state is not None and child_state not in explored_set and child_state not in frontier_states:
+                h_cost = heuristic_func(child_state, goal_state)
+                child_node = Node(child_state, current_node, current_node.g_cost + 1, h_cost)
+                heapq.heappush(frontier, (child_node.f_cost, child_node))
+                frontier_states.add(child_node.state)
+
+    return None, nodes_expanded, max_queue_size
+
 
 def backtrack_path(goal_node): ## backtrack from goal node to find path
     steps = 0
@@ -105,7 +145,7 @@ if __name__ == "__main__":
             puzzle_list.extend([int(x) for x in row3.split()])
 
             if len(puzzle_list) != 9:
-                 raise ValueError("Puzzle must have exactly 9 numbers.")
+                 raise ValueError("Puzzle must have 9 numbers.")
 
             initial_state = tuple(puzzle_list)
             print("Using custom puzzle:", initial_state)
@@ -118,9 +158,21 @@ if __name__ == "__main__":
         initial_state = default_puzzle
         print("Invalid choice. Using default puzzle:", initial_state)
 
+    print("\nChoose an algorithm:")
+    print("1. Uniform Cost Search")
+    print("2. A* w/ Misplaced Tile")
+    algorithm_choice = input("Choose (1 or 2): ")
 
-    print("\nRunning Uniform Cost Search...")
-    result_node, nodes_expanded, max_queue_size = solve_ucs(initial_state, goal_state)
+    if algorithm_choice == "1":
+        print("\nRunning Uniform Cost Search")
+        result_node, nodes_expanded, max_queue_size = solve_ucs(initial_state, goal_state)
+    elif algorithm_choice == "2":
+        print("\nRunning A* with Misplaced Tile heuristic")
+        result_node, nodes_expanded, max_queue_size = solve_a_star(initial_state, goal_state, heuristic_misplaced)
+    else:
+        print("\nInvalid choice. Running Default")
+        result_node, nodes_expanded, max_queue_size = solve_ucs(initial_state, goal_state)
+
 
     if result_node:
         steps = backtrack_path(result_node)
