@@ -50,6 +50,7 @@ def solve_ucs(initial_state, goal_state):
         max_queue_size = max(max_queue_size, len(frontier))
 
         current_node = heapq.heappop(frontier)
+        print(f"Expanding node with g={current_node.g_cost}, state={current_node.state}")
         nodes_expanded += 1
         frontier_states.discard(current_node.state)
 
