@@ -1,7 +1,10 @@
 import heapq
 import math # need this for sqrt
 import time # need this for timing
-from node import Node # the node class
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.node import Node # the node class
 
 # Helper Functions
 def find_blank(state):
@@ -87,7 +90,6 @@ def solve_ucs(initial_state, goal_state, trace=False):
 
         # Goal Check
         if current_node.state == goal_state:
-            print("\nGoal!!!")
             return current_node, nodes_expanded, max_queue_size # found 
 
         # Add to Explored Set
@@ -179,7 +181,6 @@ def solve_a_star(initial_state, goal_state, heuristic_func, trace=False):
 
         # Goal Check
         if current_node.state == goal_state:
-            print("\nGoal!!!")
             return current_node, nodes_expanded, max_queue_size # found 
 
         # Add to Explored Set
