@@ -73,7 +73,7 @@ def report_result(result_node):
 
 def record_result(algorithm, nodes_expanded, steps, queue_size):
     nodes_expanded_data[algorithm].append(nodes_expanded)
-    steps_data[algorithm].append(steps)
+    steps_data[algorithm].append(steps if steps is not None else 0)
     queue_size_data[algorithm].append(queue_size)
 
 def plot_graph(metric_data, title, puzzles):
