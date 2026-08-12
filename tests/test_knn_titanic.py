@@ -25,7 +25,7 @@ def test_knn_titanic():
     print("Loading Titanic dataset...")
     
     #load and normalize data
-    raw_data = load_dataset("data/titanic clean.txt")
+    raw_data = load_dataset("data/titanic-clean.txt")
     num_features = len(raw_data[0][0])
     print(f"Dataset has {num_features} features, {len(raw_data)} instances")
     
