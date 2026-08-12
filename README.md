@@ -28,6 +28,8 @@ python3 test/test.py
 
 This runs all three algorithms on every built-in puzzle and plots nodes expanded, solution depth, and maximum queue size. It needs `matplotlib`.
 
+Note: the script stops with a `TypeError` when it reaches the "Impossible" puzzle, so it does not currently render the plot. See Known issue below.
+
 ## Results
 
 Nodes expanded, by puzzle:
@@ -42,4 +44,17 @@ Nodes expanded, by puzzle:
 
 All three find the same optimal depth, so both heuristics are admissible. The gap only matters on hard puzzles. On "Oh Boy", the Misplaced Tile heuristic expands about 9x fewer nodes than Uniform Cost Search, and Euclidean Distance expands about 80x fewer. Euclidean Distance is the better heuristic because it measures how far each tile must travel, not just whether it is wrong.
 
-The "Impossible" puzzle has no solution. The search exhausts the frontier and reports failure.
+The table covers the five solvable puzzles. The "Impossible" puzzle is unsolvable, so no search can return a path.
+
+## Known issue
+
+`solve_ucs` in `src/solver.py` has no return statement after its `while frontier:` loop. On an unsolvable puzzle the loop ends, the function implicitly returns `None`, and the caller crashes:
+
+```
+TypeError: cannot unpack non-iterable NoneType object
+  solver.py:341
+```
+
+`solve_a_star` handles this correctly with `return None, nodes_expanded, max_queue_size`. Adding the same line to the end of `solve_ucs` fixes both the solver and `test/test.py`.
+
+The built-in "Very Easy" puzzle also differs between the two files: `src/solver.py` uses a depth-2 state, `test/test.py` a depth-1 state. The table above reflects `src/solver.py`.
