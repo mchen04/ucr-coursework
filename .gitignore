@@ -1,0 +1,20 @@
+# Local build, editor, and runtime output
+.DS_Store
+.vscode/
+*.code-workspace
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.o
+*.gch
+*.class
+a.out
+.build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+# Assignment executables and generated results should go outside this tree.
