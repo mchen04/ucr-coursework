@@ -46792,6 +46792,1341 @@
       "fork": false,
       "disposition": "exclude",
       "reason": "Independent catalog search utility. README describes catalog lookup; main.py reads UCR_Classes.pdf and searches class codes interactively (PyPDF2/tqdm), with no assignment/classroom provenance."
+    },
+    {
+      "repository": "mchen04/homebase",
+      "name": "homebase",
+      "branch": "main",
+      "tip": "21758cc0381ec3cef769d250d0e50091a3d46869",
+      "tree": "36e55fc41ea960bea9936f0f321972fd1e3c3da7",
+      "refs": [
+        {
+          "ref": "refs/heads/main",
+          "node_id": "REF_kwDOOfSua69yZWZzL2hlYWRzL21haW4",
+          "url": "https://api.github.com/repos/mchen04/homebase/git/refs/heads/main",
+          "object": {
+            "sha": "21758cc0381ec3cef769d250d0e50091a3d46869",
+            "type": "commit",
+            "url": "https://api.github.com/repos/mchen04/homebase/git/commits/21758cc0381ec3cef769d250d0e50091a3d46869"
+          }
+        }
+      ],
+      "private": false,
+      "fork": true,
+      "upstream": "freddysongg/homebase",
+      "disposition": "include",
+      "destination": "projects/homebase",
+      "reason": "Explicitly authorized Homebase addition t_55fd20c0; prior classroom provenance unestablished, no course assignment invented.",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+          "disposition": "retain",
+          "destination": "projects/homebase/.gitignore",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "LICENSE",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e30381cf1512bd8528a4cd04eb4612fbede6a698",
+          "disposition": "retain",
+          "destination": "projects/homebase/LICENSE",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "6fe4a6eda01db25a0cffad1dbbfe0fd3c18c3304",
+          "disposition": "retain",
+          "destination": "projects/homebase/README.original.md",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/.gitignore",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "8a29fa07ef771c31ff25d2c9b7516a728464789a",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/.gitignore",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/Database_Structure.txt",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "155f34799b18ff119d060570077d599825277663",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/Database_Structure.txt",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/Dockerfile",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "7e96924fbf4d694f9b0d01c4c0036945ddc02fdf",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/Dockerfile",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "89d671dd62e0973b361f893583bfceee62ea9d75",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/README.md",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/babel.config.cjs",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "a7a1a2b7c99ff94714d7c0bb8672cfeafb17fcc4",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/babel.config.cjs",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/babel.config.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "392abb66d8a4f49b58e8c0fead61732b395354a5",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/babel.config.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/eslint.config.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d3dfe8b52f2efd20f9732cd079d107085cf4bb66",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/eslint.config.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/jest.config.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1d810b0f69894ccae4504a9b21b6a83ae7c7608b",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/jest.config.mjs",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/jsconfig.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "fb0fab0dad3a479321f6379b80fd0feac8394bd9",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/jsconfig.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/nodemon.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "63ae3784ab71f1da2b6a0fe9dabf3c8088471156",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/nodemon.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/package-lock.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "405604ca5755d038bf9a3e92bed6540c831a8001",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/package-lock.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/package.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "aa4c235e38d9b13623cac6a948b5d9e8929ee85a",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/package.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/app.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "7600d7d48dea94dcab5a654e1826ea081ecad565",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/app.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/config/db.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "cafa31a7460876f01067b3fc72c03f01f5f5c200",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/config/db.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/auth.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2120b2f4f9605be5b3e126437daec6b715be7b99",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/auth.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/chore.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2541d418547ea4a52d7ba882760e922d1471bd65",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/chore.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/expense.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c9e8d2556d67f2e9a1f9b62e766dadca5826150b",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/expense.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/household.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e31f2903affef37d414de29402a8c67915f5ca75",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/household.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/notification.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d9e73fef4f3b4b6a147d890f71d12d7519d1a2d0",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/notification.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/pushSubscription.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "45887c0d7c15b370c0046c847406293b2e799443",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/pushSubscription.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/controllers/user.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "6dcbcb37eab27a710b55268245884c8b7c9c0aff",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/controllers/user.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/middleware/auth.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "46a56c80f2dd83dcf487ffcf409dd80a685b92e0",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/middleware/auth.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/middleware/errorHandler.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "adacc0a07381bc8a281587866c0260fcad5733c6",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/middleware/errorHandler.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/middleware/security.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "03c64cac5866ce6e41f7fc017e90232ab6cdb11a",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/middleware/security.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/Chore.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "88749a296818a0a0af712c6a8450e504fd5e1bb8",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/Chore.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/Expense.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d7d832ad4d4a229d94be070b4ad3a0101a471474",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/Expense.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/Household.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "5552c56c6587a8b1b6d688214e6e78ce43f58aa1",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/Household.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/HouseholdTask.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c41bd9666a0da44a4913ef2701bd395cbf542982",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/HouseholdTask.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/Notification.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "9ffe93a1f455652325771956478996c1e7a914d0",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/Notification.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/PushSubscription.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c9b78f1e32312212d1028033102168b74e513979",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/PushSubscription.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/models/User.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "472941fd30bdb91e6756e4ba15fa0a031395d266",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/models/User.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/auth.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "59cfcfd555bf500af32663e385d0b4dd74168c26",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/auth.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/chore.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d484f676b29bdf6fb019318a1782a627adfc8989",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/chore.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/expense.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "defb0ad22f6ce81151f38ed757bf46837c86f15b",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/expense.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/household.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1d45518dc2d7723abecbebd5f14286d4119463e1",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/household.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/notification.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2bc0099ef24570a0ec2d690dedcd14fd7c5bd64e",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/notification.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/pushSubscription.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "fe17fcfd441427a94260f964160f611e7afce1c1",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/pushSubscription.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/routes/user.routes.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d341cfd1ac7d6c3ae045f6db5794147c0292665b",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/routes/user.routes.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/server.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ad4b2794031efaf0e111ef1561ee2f6d94963362",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/server.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/__mocks__/notification.controller.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "269b1481b12c196f6d41ce273a9e0df0d6f05566",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/__mocks__/notification.controller.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/__mocks__/push-notification.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "6d141eaabd4f234de04dcfce6bc9a5763b615120",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/__mocks__/push-notification.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/__mocks__/web-push.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ab33135858ce2b21ad3829b0f56c6049c18875a7",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/__mocks__/web-push.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/controllers/expense.controller.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "951f5d9106b0e70f19737df986472b1f5cf36437",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/controllers/expense.controller.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/middleware/auth.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "dd03b3520f31b3fcc05b4df29a4d46a0503088c5",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/middleware/auth.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/Chore.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e10516a8d68d95b7669914687c6f257eed25f6f5",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/Chore.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/Expense.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "32baab92b115af5743452a434411ea211e0faa2d",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/Expense.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/HouseholdTask.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "93a459ddaac78cdc721489c3a3fdff328006a231",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/HouseholdTask.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/Notification.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "a2b14da9edeb313b420a6b4c5dc90be52bab7460",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/Notification.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/PushSubscription.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "8bdd196d9cfc7ac1b9400e123b7ea0902f52e63d",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/PushSubscription.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/models/User.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "a0d6a10f4311a41a4e0d5f095ee30e46a8333fc7",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/models/User.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/setup.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "3300a477450c81c68d3af7981df1393a6d9e9352",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/setup.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/setupMocks.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c2030a1874a75f22cfe16774a1e2a7e6c9a1c111",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/setupMocks.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/testApp.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c49d4b24d5af3cd8127e3fd3f6f9bb3398f23e12",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/testApp.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/tests/utils/scheduler.test.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2c18b844a73d3343a5dd3493824e0b7148e89425",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/tests/utils/scheduler.test.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/utils/email.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "997c232378b7927589ad5a3dd96f5786e547f62c",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/utils/email.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/utils/household.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "5cd47adfb4102176440eb4422eff8b6cc9aadcdf",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/utils/household.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/utils/logger.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "efda88dffb78a3f36e0774621bb3add8ba659a2b",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/utils/logger.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/utils/push.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "f66a54c93290f26f234b3e47f615fd6deaf531d3",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/utils/push.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "backend/src/utils/scheduler.js",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "091c794591ab8d2ad03c396c43f56fe95a49bc7c",
+          "disposition": "retain",
+          "destination": "projects/homebase/backend/src/utils/scheduler.js",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/.github/workflows/ci.yaml",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "54e467fa48d0e00c6512341eb7be02a9e4521415",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/.github/workflows/ci.yaml",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/.gitignore",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "5ef6a520780202a1d6addd833d800ccb1ecac0bb",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/.gitignore",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/.prettierignore",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "dbf082131534ed4fab733e58fc8756f58459f68f",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/.prettierignore",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/.prettierrc",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "b5ec568c5aa84bd7c360f3cf49fc5e1921ccc206",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/.prettierrc",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/Dockerfile",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "b3c901730370bcd9b506d16633e66a3b8e2a9e13",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/Dockerfile",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e215bc4ccf138bbc38ad58ad57e92135484b3c0f",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/README.md",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/components.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "0e8b6332f3b5138d2a4832097dfe4ba47e7ee93d",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/components.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/cypress.config.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c915a2e8002efb80674f918484cbd93acb80ea39",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/cypress.config.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/cypress/e2e/homebase.cy.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "bb3bfd848275641fd53af86eb76726d3e70d8cac",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/cypress/e2e/homebase.cy.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/cypress/fixtures/example.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "02e4254378e9785f013be7cc8d94a8229dcbcbb7",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/cypress/fixtures/example.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/cypress/support/commands.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "698b01a42c355ca80fdca1c2c979299164d3c7e7",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/cypress/support/commands.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/cypress/support/e2e.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e4e246ec993e4636b1f5c2595090c648d3d6de93",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/cypress/support/e2e.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/eslint.config.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c85fb67c463f20d1ee449b0ffee725a61dfb9259",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/eslint.config.mjs",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/next.config.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e9ffa3083ad279ecf95fd8eae59cb253e9a539c4",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/next.config.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/package-lock.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ac85cc7478e7a75893cd084a065c8dba11fd3fce",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/package-lock.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/package.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e6dde84f7495c0275a238b228227fba341e43b11",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/package.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/postcss.config.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1a69fd2a450afc3bf47e08b22c149190df0ffdb4",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/postcss.config.mjs",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/file.svg",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "004145cddf3f9db91b57b9cb596683c8eb420862",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/file.svg",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/globe.svg",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "567f17b0d7c7fb662c16d4357dd74830caf2dccb",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/globe.svg",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/google.png",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1d4d40d6c7c891ecb0f4e87d1f57071cc49f57bf",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/google.png",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/next.svg",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "5174b28c565c285e3e312ec5178be64fbeca8398",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/next.svg",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/vercel.svg",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "77053960334e2e34dc584dea8019925c3b4ccca9",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/vercel.svg",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/videoplayback.mp4",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d222652d5d13ef0796874a9d3679bf956cecb5b4",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/videoplayback.mp4",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/public/window.svg",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "b2b2a44f6ebc70c450043c05a002e7a93ba5d651",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/public/window.svg",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/api/auth/[...nextauth]/route.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "805ff4987c3e8c414b80725dfb8527dd60d0be7b",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/api/auth/[...nextauth]/route.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/blank/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "f0ea3e6e699aa766bf3133e239479b56227af13f",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/blank/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/chore/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "bbbca2522ac32bba2e57ede1f074f1f93c70164d",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/chore/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/dashboard/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "171b4ed360de38cfbdc79b2c7a4c94da5a2c1e7c",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/dashboard/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/expense/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1cfeefa3914184a2b7a9d0c278aa686282ddbbb9",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/expense/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/favicon.ico",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "718d6fea4835ec2d246af9800eddb7ffb276240c",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/favicon.ico",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/globals.css",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "fcfdfb9488289081ffe9a8ce72f9ce10ec07b8da",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/globals.css",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/homes/[homeCode]/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "885a4c68dd546c245a89cd010a370c21695a1e7c",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/homes/[homeCode]/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/homes/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ea6d07ee83d205c0a3b19291f34030a28b8f7e62",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/homes/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/layout.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d26ec7a44626a0474a616c7e550e7bc1b15ce9c1",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/layout.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/login/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e401f88e0ae73830fd57b699eae177fc4a91a900",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/login/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "3a7ed6eb3906fae226378dbf248a438f53f7c8cb",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/signup/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "7206a06e45e592c254ca839143a568bd1e00cea6",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/signup/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/app/usettings/page.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c79c11e8da5abbb325d21e187adab6fcf5897be0",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/app/usettings/page.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/About.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ee894051c338b0d0741847577922ab54b2162927",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/About.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/Button.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "f9ffdf0ef412376242b24c373488e5030ae91acb",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/Button.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/Footer.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1842714f09fbbb581f67f720aef1883af02f3f23",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/Footer.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/Landing.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "51a834bca07a0d63005a718d85c12d71d7109269",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/Landing.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/Navigation.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c315328b303ab59474f80ac4fed77c1f4c16addf",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/Navigation.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/SessionProviderWrapper.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c511f07d5cbef5c8bc75d6fb17ce7f8956436fd5",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/SessionProviderWrapper.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ThemeProvider.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "dd88752b3255c7e948cd96eb78d4d9d217d168b9",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ThemeProvider.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/chore/Chore.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "25720a586123772219487c6911be96d51ca8fd92",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/chore/Chore.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/dashboard/ChoreChart.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "a81cffe8928696cf73d7aa5cef9702cd6341cea7",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/dashboard/ChoreChart.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/dashboard/Dashboard.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "10302e19ed4198c58998bd2e183eedf057c92ec1",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/dashboard/Dashboard.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/dashboard/ExpenseChart.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "35d9da6102fa27d88b452363e9354a31f6bbab20",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/dashboard/ExpenseChart.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/expense/Expense.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ab10b3d6fabf67bc4499bf3b022a7f09e258c13f",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/expense/Expense.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/homes/HomeDetails.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "fa405ee23c79a083221d9d8c3f9dd7500f298c80",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/homes/HomeDetails.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/homes/Homes.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d93d589df750f9e08ed39e8bbb9ad608c88f00fe",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/homes/Homes.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/login/Login.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "34314ff9b49c44b59b1911309f5f39a0757ab74a",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/login/Login.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/signup/SignUp.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2d6222f84ad4e76e0d4ef1a4131d008afaf9ec45",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/signup/SignUp.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/alert.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "be51631115150b945a6a80a6258e0bd3029cf2ce",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/alert.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/avatar.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "f80a621fef08a04f37addb741a898ec2555727cc",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/avatar.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/badge.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ec81a8df3404225581b3f76dec889351a18f1c26",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/badge.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/button.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "bc8afe0a1a8836b315c6af234b28202c84da915d",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/button.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/calendar.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "74c8e0d3f062a7cd7f024a3243c60de7beb8ad32",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/calendar.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/card.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "639673f60a56164e4d6379ae49a4a121317b685c",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/card.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/checkbox.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "0f8d1e6fb5fab37a05d5893d4fda3059d54b1407",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/checkbox.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/dialog.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "e46bfac8a2cb1f661a34a62a8036a7b17b9d9c7b",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/dialog.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/dropdown-menu.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "47059cafefc1df730307470d17e115a572c59c48",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/dropdown-menu.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/form.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "6360c1f7a45ee5001c4e26ee107be41e637e4588",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/form.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/input.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "6be02070ea11a919f3bebfe2a2b55393ffa536c6",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/input.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/label.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "625517ff4a4edc74b0047e2592ac60b8105ed852",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/label.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/navigation-menu.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "8185eb6ee40766dbb4606918b91e87ba848cd88b",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/navigation-menu.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/popover.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "59bc59551fa9000c2fa7fa88b5f3cb39e18f8ada",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/popover.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/progress.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "ed0fffe338f4bfa7881113c31d2e5f16567a6635",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/progress.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/select.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "cf7d9b324780633aa46b59bccacf9d889fe6896b",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/select.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/separator.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "89b9167811596e62c161a3e5749d8751e10b34d1",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/separator.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/sheet.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "dfc4518ea057d7f39a2efc0d66f657f5252d1d44",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/sheet.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/switch.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "9c51976b62e6980634f8b2c51a7de68db36ee0a8",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/switch.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/table.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "50e56b5002915560cff0f0076a6eb71319f016e2",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/table.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/tabs.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "d19d7ea45c4ceb9d26cf32060755a8a9c783518a",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/tabs.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/ui/textarea.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "3cbbaf3e7e74f9a7e89dff608b3dd63213cc8243",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/ui/textarea.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/components/usettings/Settings.tsx",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "9e7cea8f33253d5b24221ae430780722c25abfb5",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/components/usettings/Settings.tsx",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/data/features.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "1e44ad356ef60dbe61db5596f037ac99824148b3",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/data/features.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/lib/utils.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "2819a830d242f11fda91c4e8951794ab815cec77",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/lib/utils.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/src/utils/notificationService.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "aa2e6036d275798ead8dd72b64f8d79ec0732c0c",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/src/utils/notificationService.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/tailwind.config.ts",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "95b7c7354bda4c9536e1597fdb3bfa09cbaff821",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/tailwind.config.ts",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        },
+        {
+          "original_path": "frontend/tsconfig.json",
+          "mode": "100644",
+          "type": "blob",
+          "original_blob": "c1334095f876a408c10f2357faaced969ec090ab",
+          "disposition": "retain",
+          "destination": "projects/homebase/frontend/tsconfig.json",
+          "reason": "Original source/resource retained byte-for-byte with internal path and working directory."
+        }
+      ],
+      "commit_count": 134,
+      "authors": [
+        "    48\tsunbrandon <sunabrandon@gmail.com>",
+        "    21\tBrandon Sun <132787942+sunbrandon@users.noreply.github.com>",
+        "    17\tAlex Yen <alexanderyen88@gmail.com>",
+        "    17\tFreddy Song <fredsong99@gmail.com>",
+        "    13\tAlex Yen <64163714+Alexyen04@users.noreply.github.com>",
+        "    11\tmchen04 <michaelluochen1@gmail.com>",
+        "     4\tFreddy Song <58492492+freddysongg@users.noreply.github.com>",
+        "     2\ttabito12345678910 <tabito@gmail.com>",
+        "     1\tTabito Sakamoto <tabito@gmail.com>"
+      ]
     }
   ],
   "local_notes": [
@@ -47115,5 +48450,16 @@
       "destination": "courses/cs170/projects/02-feature-selection",
       "disposition": "already consolidated; no duplicate import; absent from live owned listing"
     }
-  }
+  },
+  "additions": [
+    {
+      "task": "t_55fd20c0",
+      "snapshot_utc": "2026-10-11T21:46:47.477755+00:00",
+      "repository": "mchen04/homebase",
+      "base_default_commit": "a802a5021ff8678f4cf89d954a33c99897e332c3",
+      "baseline_tree": "973f0c64816e331fd71cfba6ba8060db47d44fd1",
+      "history_anchor": "4de63f8ceba40663fd29ec85fc1905bc4cea09ad",
+      "policy": "Explicitly authorized inclusion; classroom/course number unestablished. Existing source/local-note manifests unchanged. Baseline-tree anchor must enter default ancestry before later content squash."
+    }
+  ]
 }
