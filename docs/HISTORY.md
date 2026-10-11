@@ -1,6 +1,8 @@
 # Source history and recovery
 
-Original Git commit IDs, trees, blobs, authors and branch tips are retained without rewriting them. Empty bootstrap and history-anchor commits connect the source histories while keeping the anchor's current tree empty. The future consolidation squash is based on this anchor, so source ancestry survives. Source branch refs remain under `source-history/<original-name-lowercase>/<original-branch>`; all observed source heads/tags are accounted for in `SOURCES.json`.
+Original Git commit IDs, trees, blobs, authors and branch tips are retained without rewriting them. The initial empty bootstrap/history anchor already survives in the published coursework main ancestry. Source branch refs remain under `source-history/<original-name-lowercase>/<original-branch>`; all observed source heads/tags are accounted for in `SOURCES.json`.
+
+For the HomeBase addition, baseline-tree anchor `4de63f8ceba40663fd29ec85fc1905bc4cea09ad` has parents published main `a802a5021ff8678f4cf89d954a33c99897e332c3` and original HomeBase tip `21758cc0381ec3cef769d250d0e50091a3d46869`. Its current tree is exactly the existing coursework tree, rather than empty. Retain `history-anchor/homebase` and `source-history/homebase/main`, and fast-forward private default main to that unchanged-tree anchor before a later authorized content squash. A content squash alone would discard a merge parent's source ancestry. This method preserves all 134 HomeBase commits without rewriting or duplicating prior imports; the first build phase creates only local commits/refs. Original HomeBase paths exist in historical commits; its root README is byte-identical at `projects/homebase/README.original.md` in the current tree.
 
 In a full destination clone, use the source SHAs from the manifest:
 

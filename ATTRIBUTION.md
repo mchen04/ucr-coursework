@@ -12,6 +12,7 @@ Original authors, commits and README credit are preserved. No collection-wide re
 | [mchen04/cs170-projects](https://github.com/mchen04/cs170-projects) | `0036b5e8c2188b2f24c158875125c94dded0b890` | [courses/cs170](courses/cs170/) | 43 |
 | [mchen04/cs180-statement-coverage](https://github.com/mchen04/cs180-statement-coverage) | `f76580b3270273b3b27da1589b2f7d77b0af0caf` | [courses/cs180/statement-coverage](courses/cs180/statement-coverage/) | 1 |
 | [mchen04/Modded-Word-Hunt](https://github.com/mchen04/Modded-Word-Hunt) | `33fb279793d33c24ef8b43cbb80616be5b73c5d8` | [projects/Modded-Word-Hunt](projects/Modded-Word-Hunt/) | 191 |
+| [mchen04/homebase](https://github.com/mchen04/homebase) | `21758cc0381ec3cef769d250d0e50091a3d46869` | [projects/homebase](projects/homebase/) | 134 |
 
 ## Observed source contributors
 
@@ -24,7 +25,11 @@ Original authors, commits and README credit are preserved. No collection-wide re
 - **cs180-statement-coverage**: 1	mchen04 <michaelluochen1@gmail.com>
 - **Modded-Word-Hunt**: 53	mchen04 <michaelluochen1@gmail.com>; 31	freddy <fredsong99@gmail.com>; 24	Michael Chen <michaelluochen1@gmail.com>; 24	sshakya03 <75502358+sshakya03@users.noreply.github.com>; 18	Freddy Song <58492492+MrFrooty@users.noreply.github.com>; 18	Splinter003 <sazen2011@gmail.com>; 11	Alexyen04 <64163714+Alexyen04@users.noreply.github.com>; 6	MrFrooty <fredsong99@gmail.com>; 4	Michael Chen <mchen356@ucr.edu>; 2	github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
 
+- **homebase**:     48	sunbrandon <sunabrandon@gmail.com>;     21	Brandon Sun <132787942+sunbrandon@users.noreply.github.com>;     17	Alex Yen <alexanderyen88@gmail.com>;     17	Freddy Song <fredsong99@gmail.com>;     13	Alex Yen <64163714+Alexyen04@users.noreply.github.com>;     11	mchen04 <michaelluochen1@gmail.com>;      4	Freddy Song <58492492+freddysongg@users.noreply.github.com>;      2	tabito12345678910 <tabito@gmail.com>;      1	Tabito Sakamoto <tabito@gmail.com>
+
 Word Hunt specifically credits Alex Yen, Freddy Song, Michael Chen and Sazen Shakya and is an owned private fork of the CS100 GitHub Classroom final project. The nonowned organization repo is not separately imported. CS170 credits Michael Chen and Tabito Sakamoto; both original project histories already exist in cs170-projects and are retained once. Existing dataset/media/font/JDBC/submodule provenance and licensing limits remain; no new author/license has been invented.
+
+HomeBase is the owned public fork of [freddysongg/homebase](https://github.com/freddysongg/homebase), included by explicit authorization without asserting a course number. Its [original README](projects/homebase/README.original.md) credits Alex Yen, Freddy Song, Michael Chen, Brandon Sun and Tabito Sakamoto; its [MIT license](projects/homebase/LICENSE) retains copyright 2025 Freddy Song. All 134 original reachable commits/authors are preserved. The archive does not recreate the upstream fork relationship, accounts, integrations or repository settings. Meaningful media/assets remain under their original source license/provenance limits.
 
 Local notes: 28 byte-identical Markdown snapshots from `mbp-main:~/Projects/Archive/vault-backup-2026-05-11/projects/school/`, with original locations and hashes in `SOURCES.json`. No earlier local Git history was discovered. Historical frontmatter/source pointers retained in those files do not mean any transcript was searched or imported. Surrounding vault links and external Research artifacts remain external.
 

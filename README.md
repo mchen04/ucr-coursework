@@ -17,8 +17,11 @@ Michael Chen's private UC Riverside coursework archive. Browse by course or assi
 | [BUS146](courses/bus146/README.md) | Cases, business model canvas, and MVP-sprint notes |
 | [BUS154](courses/bus154/README.md) | Business-law outline and study-bundle notes |
 | [Modded Word Hunt](projects/Modded-Word-Hunt/README.md) | Private CS100 classroom team fork; C++/SFML game and existing tests |
+| [HomeBase](projects/homebase/README.md) | Explicitly authorized team project; shared-home app, original source/history and isolated npm instructions |
 
-Start with a course README, then change into the linked assignment directory. C++ assignments are independent programs and must not be linked together. Python assignment CLIs use their project directory for data lookup. No shared runtime or new collection-wide test suite is imposed.
+HomeBase is included by explicit authorization; no course number or assignment provenance is asserted. Its owned fork and team attribution remain documented.
+
+Start with a course or project README, then change into the linked assignment directory. C++ assignments are independent programs and must not be linked together. Python assignment CLIs use their project directory for data lookup. No shared runtime or new collection-wide test suite is imposed.
 
 The local BIO/BUS/CS166 notes are snapshots of academic summaries found on mbp-main under `~/Projects/Archive/vault-backup-2026-05-11/projects/school/`. They retain original frontmatter and wiki links. They are not copies of every paper/reading or `Research/`/`Reserach_Container/` artifact mentioned inside them. New course indexes provide ordinary Markdown links; historical wiki links to the surrounding vault may remain unresolved. See the [original coursework map](docs/local-coursework-map.original.md).
 
