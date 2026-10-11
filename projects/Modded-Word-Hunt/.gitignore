@@ -1,0 +1,13 @@
+build/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+WordHunt
+.DS_Store
+testFile.txt
+
+googletest/
+lib/
+
+test

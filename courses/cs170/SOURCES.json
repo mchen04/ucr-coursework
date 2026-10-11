@@ -1,0 +1,193 @@
+{
+  "format_version": 1,
+  "history_anchor_commit": "17027f55e85507308975807487fb21adfc092f15",
+  "history_preservation": "Original source tips are parents of the empty-tree main bootstrap history anchor, remaining ancestors after squash merge.",
+  "components": [
+    {
+      "source_repository": "https://github.com/mchen04/cs170-eight-puzzle-search",
+      "source_default_branch": "main",
+      "source_commit": "a9bd2bb6e908bd770d71f964a72dc070bd8423ac",
+      "source_tree": "410ab1bf7a3de84c669fbf3a57d467d8339f67b8",
+      "source_commit_count": 17,
+      "retained_folder": "projects/01-eight-puzzle-search",
+      "files": [
+        {
+          "source_path": ".gitignore",
+          "source_mode": "100644",
+          "source_blob": "3b51b23d7def96ee5cad2b7d1ecb7a9a24c04943",
+          "retained_path": "projects/01-eight-puzzle-search/.gitignore",
+          "retained_blob": "3b51b23d7def96ee5cad2b7d1ecb7a9a24c04943",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "README.md",
+          "source_mode": "100644",
+          "source_blob": "5a272a81c2c8c06739f06de27bc04ed778c6599c",
+          "retained_path": "projects/01-eight-puzzle-search/README.md",
+          "retained_blob": "871dc2723afe4f8fbe9ba50f9263023c0e9bdf1a",
+          "classification": "documentation: prepended component cwd/setup/resources quickstart"
+        },
+        {
+          "source_path": "src/node.py",
+          "source_mode": "100644",
+          "source_blob": "146224069ca40d418c8bde4e8208591d12abebfc",
+          "retained_path": "projects/01-eight-puzzle-search/src/node.py",
+          "retained_blob": "146224069ca40d418c8bde4e8208591d12abebfc",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/solver.py",
+          "source_mode": "100644",
+          "source_blob": "cd890a6216a3ffa29ea4c952f9f762d7075cdb6d",
+          "retained_path": "projects/01-eight-puzzle-search/src/solver.py",
+          "retained_blob": "cd890a6216a3ffa29ea4c952f9f762d7075cdb6d",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "test/test.py",
+          "source_mode": "100644",
+          "source_blob": "741e86c03df6ccf659da4577bbb7e84dcc14c0a6",
+          "retained_path": "projects/01-eight-puzzle-search/test/test.py",
+          "retained_blob": "741e86c03df6ccf659da4577bbb7e84dcc14c0a6",
+          "classification": "unchanged"
+        }
+      ],
+      "added_dependency_manifests": [
+        "requirements-benchmark.txt"
+      ],
+      "added_resources": []
+    },
+    {
+      "source_repository": "https://github.com/mchen04/cs170-feature-selection",
+      "source_default_branch": "main",
+      "source_commit": "60bb802c7501529b274856f5d2feea2d421929d8",
+      "source_tree": "dbb1d4dcc886d98a4bc221004286cc95bf352be7",
+      "source_commit_count": 22,
+      "retained_folder": "projects/02-feature-selection",
+      "files": [
+        {
+          "source_path": ".gitignore",
+          "source_mode": "100644",
+          "source_blob": "28090f163797f1e61bcc450defba6a768c3b1b5e",
+          "retained_path": "projects/02-feature-selection/.gitignore",
+          "retained_blob": "28090f163797f1e61bcc450defba6a768c3b1b5e",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "README.md",
+          "source_mode": "100644",
+          "source_blob": "137b6459d68499b09a0c902a010e0cea5455ad45",
+          "retained_path": "projects/02-feature-selection/README.md",
+          "retained_blob": "128f89e6d00aed963cd9342bd327b4d4e2772168",
+          "classification": "documentation: prepended component cwd/setup/resources quickstart; documented retained LOOCV diagnostic; replaced two repository-root cwd references with project-directory references"
+        },
+        {
+          "source_path": "data/large-test-dataset.txt",
+          "source_mode": "100644",
+          "source_blob": "ead4a752eff9e8350f592d1b2049afd4661a6247",
+          "retained_path": "projects/02-feature-selection/data/large-test-dataset.txt",
+          "retained_blob": "ead4a752eff9e8350f592d1b2049afd4661a6247",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "data/small-test-dataset.txt",
+          "source_mode": "100644",
+          "source_blob": "97b4355e063c8f72691fae334e64f38038117c14",
+          "retained_path": "projects/02-feature-selection/data/small-test-dataset.txt",
+          "retained_blob": "97b4355e063c8f72691fae334e64f38038117c14",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "data/titanic-clean.txt",
+          "source_mode": "100644",
+          "source_blob": "069b26bd922f56ff6c0e0c63d79ca9a618b57029",
+          "retained_path": "projects/02-feature-selection/data/titanic-clean.txt",
+          "retained_blob": "069b26bd922f56ff6c0e0c63d79ca9a618b57029",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/data_loader.py",
+          "source_mode": "100644",
+          "source_blob": "901a80f177fa0b0d002c4b570bd0d276ecb55a23",
+          "retained_path": "projects/02-feature-selection/src/data_loader.py",
+          "retained_blob": "901a80f177fa0b0d002c4b570bd0d276ecb55a23",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/main.py",
+          "source_mode": "100644",
+          "source_blob": "f6f1fffcc05ef997fffbb56800729122ef203d30",
+          "retained_path": "projects/02-feature-selection/src/main.py",
+          "retained_blob": "f6f1fffcc05ef997fffbb56800729122ef203d30",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/nn_classifier.py",
+          "source_mode": "100644",
+          "source_blob": "62289d6bdf798d3f281b5285a11bc9d829cf16a5",
+          "retained_path": "projects/02-feature-selection/src/nn_classifier.py",
+          "retained_blob": "62289d6bdf798d3f281b5285a11bc9d829cf16a5",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/utils.py",
+          "source_mode": "100644",
+          "source_blob": "34348fb9d0a50e60461a6fe75e59b4898afe7eed",
+          "retained_path": "projects/02-feature-selection/src/utils.py",
+          "retained_blob": "34348fb9d0a50e60461a6fe75e59b4898afe7eed",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "src/validator.py",
+          "source_mode": "100644",
+          "source_blob": "9de16ef35e3761464c0277b9c3900b61adacd570",
+          "retained_path": "projects/02-feature-selection/src/validator.py",
+          "retained_blob": "9de16ef35e3761464c0277b9c3900b61adacd570",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "tests/test_data_utils.py",
+          "source_mode": "100644",
+          "source_blob": "e6f42e7b4f75d44207adaa9010356702d98744c2",
+          "retained_path": "projects/02-feature-selection/tests/test_data_utils.py",
+          "retained_blob": "e6f42e7b4f75d44207adaa9010356702d98744c2",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "tests/test_knn_titanic.py",
+          "source_mode": "100644",
+          "source_blob": "4260c49c9ada8dce5cfdaac73bd7ccca7eae8818",
+          "retained_path": "projects/02-feature-selection/tests/test_knn_titanic.py",
+          "retained_blob": "4260c49c9ada8dce5cfdaac73bd7ccca7eae8818",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "tests/test_loocv_validator.py",
+          "source_mode": "100644",
+          "source_blob": "4fad2156f2a936eb4564049c2860b4f6f292b924",
+          "retained_path": "projects/02-feature-selection/tests/test_loocv_validator.py",
+          "retained_blob": "4fad2156f2a936eb4564049c2860b4f6f292b924",
+          "classification": "unchanged"
+        },
+        {
+          "source_path": "tests/test_nn_classifier.py",
+          "source_mode": "100644",
+          "source_blob": "22b1ac880c2c7a3b148b3cc644425b5f7b320110",
+          "retained_path": "projects/02-feature-selection/tests/test_nn_classifier.py",
+          "retained_blob": "22b1ac880c2c7a3b148b3cc644425b5f7b320110",
+          "classification": "unchanged"
+        }
+      ],
+      "added_dependency_manifests": [],
+      "added_resources": []
+    }
+  ],
+  "external_resources": [],
+  "added_root_files": [
+    ".gitignore",
+    "README.md",
+    "ATTRIBUTION.md",
+    "SOURCES.json"
+  ],
+  "license_policy": "No blanket relicensing; source licenses and original attribution are retained."
+}
